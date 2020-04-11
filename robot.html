@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Robot</title>
+
+    <style>
+    h1{
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .head{
+        background-color: green;
+        width: 200px;
+        height: 150px;
+        border-radius: 200px 200px 0 0;
+        position: relative;
+        top: 50px;
+        left: 520px;
+        transition: 1s;
+    }
+    .head:hover{
+        transform: scale(1.1);
+    }
+
+    .eyes{
+
+    }
+    .lefteye{
+        background-color: indianred;
+        position: relative;
+        width: 15px;
+        height: 15px;
+        top: 84px;
+        left: 140px;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    .righteye{
+        background-color: indianred;
+        position: relative;
+        width: 15px;
+        height: 15px;
+        top: 70px;
+        left: 50px;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+    .upperbody{
+        background-color: green;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 65px;
+        left: 520px ;
+        border-radius: 0px 0px 50px 50px;
+    }
+    .rightarm{
+        background-color: green;
+        width: 30px;
+        height: 100px;
+        position: relative;
+        left:205px;
+        border-radius: 15px;
+    }
+    .leftarm{
+        background-color: green;
+        width: 30px;
+        height: 100px;
+        position: relative;
+        bottom:95px;
+        right: 35px;
+        border-radius: 15px;
+    }
+    .rightarm:hover{
+        transform: rotate(45deg);
+    }
+  .leftleg{
+        background-color: green;
+        width: 35px;
+        height: 100px;
+        position: relative;
+        border-radius: 15px;
+        bottom: 60px;
+        left: 565px;
+    }
+    .leftleg:hover{
+        transform: rotate(20deg);
+    }
+    .rightleg{
+        background-color: green;
+        width: 35px;
+        height: 100px;
+        position: relative;
+        border-radius: 15px;
+        top: 40px;
+        left: 650px;
+    } 
+    .rightleg:hover{
+        transform: rotate(20deg);
+    }
+     .robot {
+         position: relative;
+        animation-name: robot ;
+        animation-duration: 4s;
+        /* animation-delay: -2s; */
+        animation-iteration-count: 3; 
+        animation-direction: alternate;
+        animation-timing-function: ease;
+     }
+        @keyframes .robot{
+            from { background-color:green;}
+            to {background-color: yellow;}
+        }
+
+
+    
+
+    </style>
+</head>
+<body>
+        
+    <h1>Robot Friend</h1>
+    <!-- <marquee behavior="alternate" direction="left"> -->
+    <div class="robot">
+        <div class="head">
+            <div class="eyes">
+                <div class="lefteye"></div>
+                <div class="righteye"></div>
+            </div>
+        </div>
+  
+    <div class="upperbody">
+        <div class="rightarm"></div>
+        <div class="torso"></div>
+        <div class="leftarm"></div>
+    </div>
+
+    <div class="lowerbody">
+        <div class="rightleg"></div>
+        <div class="leftleg"></div>
+    </div>
+</div>
+<!-- </marquee> -->
+</body>
+</html>
